@@ -1,0 +1,95 @@
+/* Reset some default styles */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  box-sizing: border-box;
+}
+/*--header Background--*/
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./Img/001.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/*--Navigation--*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/*--logo--*/
+.logo {
+  width: auto;
+  font-weight: 400;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*--facebook--*/
+.nav-right {
+  font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 40%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*--small--*/
+.hero small {
+  font-size: 1.2rem;
+  color: #111;
+  padding-bottom: 1.2rem;
+}
+
+/*--button--*/
+.cta-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  top: 30%;
+  z-index: 2;
+  position: relative;
+  background-color: #d78977;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+/* Responsive: Tablets */
+@media (max-width: 768px) {
+  .hero {
+    left: 5%;
+    top: 30%;
+    transform: translateY(-30%);
+  }
+}
+/* Responsive: Phones */
+@media (max-width: 480px) {
+  .hero {
+    left: 5%;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+
+  .hero small {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
